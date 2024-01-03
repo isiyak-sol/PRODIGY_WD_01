@@ -1,0 +1,511 @@
+* {
+	line-height: 1.5;
+	font-family: Arial; 
+}
+body {
+	background-color: #f4f4f4;
+	margin: 0;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+header {
+	background-color: #222;
+	min-height: 50px;
+	border-bottom: 5px solid rgb(255,0,0);
+	padding: 20px 0;
+}
+
+header #logo {
+	float: left;
+}
+
+header #logo h1 {
+	margin: 0;
+	color: #fff;
+}
+
+header #logo span {
+	color: rgb(255,0,0);
+}
+
+header nav {
+	float: right;
+	margin-top: 10px;
+}
+
+header nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+header nav ul li {
+	display: inline;
+	float: left;
+	padding: 0 20px;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #fff;
+}
+
+header nav ul li a.active {
+	color: rgb(255,0,0);
+}
+
+header nav ul li a:hover:not(.active) {
+	color: rgb(255,0,0);
+	border-bottom: 1px solid #fff;
+	transition: 0.3s ease;
+}
+
+
+
+/*................showcase-area.................*/
+section#showcase-area {
+	background-image: url('../images/bg_image_1.jpg');
+	background-position: 0 -450px;
+	background-repeat: no-repeat;
+	min-height: 400px;
+	position: relative;
+}
+
+section#showcase-area::after {
+	content: '';
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	z-index: 1;
+ 	width: 100%;
+ 	height: 100%;
+ 	background-color: rgba(0,0,0,0.8);
+}
+
+#showcase-content {
+	position: relative;
+	text-align: center;
+	color: #fff;
+	z-index: 2;
+}
+
+#showcase-content h1 {
+	font-size: 55px;
+	margin-top: 100px;
+	margin-bottom: 10px;
+}
+
+#showcase-content p {
+	font-size: 20px;
+}
+
+/*......................Subscription Bar.............*/
+section#subscription {
+	background-color: #333;
+	color: #fff;
+	padding: 15px;
+}
+
+article#sub-content h2 {
+	float: left;
+	font-size: 25px;
+}
+
+article#sub-content #sub-email {
+	float: right;
+	margin-top: 15px;
+}
+
+article#sub-content input[type=email] {
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: 1px solid #333;
+	outline: none;
+	width: 250px;
+	vertical-align: center;
+
+}
+
+article#sub-content input[type=email]:focus {
+	border: 1px solid rgb(255,0,0);
+	transition: 0.3s;
+}
+
+article#sub-content #sub-email button.btn-1 {
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 1px solid #333;
+	outline: none;
+	cursor: pointer;
+	background-color: rgb(255,0,0);
+	font-size: 17px;
+	border-radius: 5px;
+	color: #fff;
+	height: 45px;
+}
+
+article#sub-content #sub-email button:hover {
+	opacity: 0.9;
+	border: 1px solid #fff;
+	transition: 0.3s;
+}
+
+/*.........................Home--Services...............*/
+section#top-services {
+	margin: 60px 0;
+}
+
+article#services-row {
+
+}
+
+.services-col {
+	width: 30%;
+	float: left;
+	padding: 15px;
+
+}
+
+.services-col img {
+	width: 50%;
+	display: block;
+	margin: auto;
+}
+
+.services-col h2 {
+	text-align: center;
+}
+
+.services-col p {
+	text-align: center;
+}
+
+.services-col:hover {
+	box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+	background-color: #fff;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+article#services-row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*.....................Service Page styling.................*/
+article#services-head {
+	margin-top: 40px;
+}
+
+article#services-head h2, p {
+	text-align: unset;
+}
+
+article#services-head h2 {
+	font-size: 30px;
+}
+
+article#services-head p {
+	font-size: 20px;
+}
+
+.services-col:not(:last-child) {
+	margin-bottom: 40px;
+}
+
+/*.................works page styling..............*/
+section#top-works {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.works-col {
+	width: 29%;
+	float: left;
+	padding: 15px;
+	margin: 5px;
+	background-color: #fff;
+	position: relative;
+	border: 1px solid #fff;
+}
+
+.works-col img {
+	width: 20%;
+	display: block;
+	margin: auto;
+	transition: 0.5s ease;
+}
+
+.works-col h2 {
+	text-align: center;
+	transition: 0.5s ease;
+}
+
+.works-col p {
+	text-align: center;
+	transition: 0.5s ease;
+}
+
+.link-content {
+	position: absolute;
+	text-align: center;
+	background-color: #fff;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transition: 0.5s ease;
+	opacity: 0;
+}
+
+.link a {
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	background-color: rgb(255,0,0);
+	padding: 12px 14px;
+	border-radius: 5px;
+
+}
+
+.link a:hover {
+	opacity: 0.9;
+	border: 1px solid #000;
+	transition: 0.3s;
+}
+
+.works-col:hover img{
+	opacity: 0;
+}
+
+.works-col:hover h2{
+	opacity: 0;
+}
+
+.works-col:hover p{
+	opacity: 0;
+}
+
+.works-col:hover .link-content {
+	opacity: 1.0;
+}
+.works-col:hover {
+	box-shadow: 0 10px 30px rgba(255,0,0,0.2);
+	border-radius: 5px;
+	transition: 0.5s ease;
+}
+
+/*....................About Page styling................*/
+section#about-content {
+	margin-top: 60px;
+	margin-bottom: 60px;
+
+}
+
+article#about-the-page {
+	float: left;
+	width: 63%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 15px;
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 5px;
+}
+
+article#about-the-page p {
+	padding: 0 15px;
+}
+
+article#about-the-page h1, aside#about-aside h1 {
+	text-align: center;
+	font-size: 25px;
+}
+
+aside#about-aside h2 {
+	text-align: center;
+	font-size: 18px;
+	background-color: #000;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+aside#about-aside {
+	float: right;
+	width: 30%;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	padding: 10px 0;
+	color: #fff;
+	background-color: #333;
+	border-radius: 5px;
+}
+
+aside#about-aside ul {
+	margin: 5px auto;
+}
+
+aside#about-aside .porfolio {
+	text-align: center;	
+	margin: 10px 0;
+}
+
+aside#about-aside .porfolio a {
+	text-transform: uppercase;
+	font-size: 18px;
+	text-decoration: none;
+	color: #fff;
+	background-color: rgb(255,0,0);
+	padding: 12px 20px;
+	border-radius: 5px;
+}
+
+aside#about-aside .porfolio a:hover {
+	opacity: 0.9;
+	border: 1px solid #fff;
+	transition: 0.3s;
+}
+
+
+/*........................Contact Page styling................. */
+section#contact-content {
+	/*background-image: url('./images/contact-back.jpg');
+	background-repeat: no-repeat;
+	background-position: 0 -100px;
+	background-size: cover;
+	min-height: 500px;*/
+}
+
+article#contact-form {
+	float: left;
+	width: 35%;
+	padding: 30px;
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 5px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+article#contact-form h1 {
+	text-align: center;
+	font-size: 30px;
+	margin-top: 0;
+}
+
+article#contact-form input, label {
+	display: block;
+}
+
+article#contact-form label {
+	margin: 6px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+article#contact-form input[type=text], input[type=email] {
+	padding: 12px 20px;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #cccccc;
+	border-radius: 10px;
+	font-size: 16px;
+	margin: 5px 0 10px;
+}
+
+article#contact-form textarea {
+	width: 100%;
+	font-size: 16px;
+	box-sizing: border-box;
+	height: 100px;
+	padding: 5px 20px;
+	resize: none;
+	border-radius: 10px;
+	outline: none;
+	border: 1px solid #cccccc;
+} 
+
+article#contact-form input[type=submit] {
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 10px;
+	margin: 5px 0 10px;
+	padding: 20px;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 1px;
+	background-color: rgb(255,0,0);
+	color: #fff;
+}
+
+article#contact-form input[type=text]:focus, input[type=email]:focus, article#contact-form textarea:focus {
+	border: 1px solid rgb(255,0,0);
+	outline: 0;
+	transition: 0.5s ease;
+}
+article#contact-form input[type=submit]:hover {
+	opacity: 0.9;
+	border: 1px solid #000;
+	transition: 0.3s;
+}
+
+aside#contact-side-bar {
+	width: 30%;
+	float: right;
+	margin: 150px auto;
+	border-radius: 5px;
+	padding: 30px;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+	background-color: #fff;
+}
+
+aside#contact-side-bar img {
+	width: 10%;
+	display: block;
+	margin: auto;
+}
+
+aside#contact-side-bar h2 {
+	text-align: center;
+	font-size: 17px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+footer {
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+}
+
+footer .dev-link p {
+	text-align: center;
+	margin: 0;
+}
+
+footer .dev-link a {
+	text-decoration: none;
+	padding: 0 7px;
+}
+
+footer .dev-link img {
+	width: 5%;
+	border: 2px solid #000;
+}
+
+footer .dev-link img:hover {
+	border-radius: 100%;
+	border: 2px solid #fff;
+	transition: 0.5s ease;
+}

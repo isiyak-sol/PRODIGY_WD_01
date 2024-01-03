@@ -1,0 +1,99 @@
+@media screen and (max-width: 1206px) {
+	header #logo, header nav, header nav ul li,
+	article#sub-content h2 {
+		float: none;
+		width: 100%;
+	}
+
+	header #logo {
+		
+	}
+
+	header #logo h1 {
+		margin: 5px auto;
+		border: 3px solid #fff;
+		padding: 10px;
+		font-size: 30px;
+		text-align: center;
+		border-radius: 15px;
+	}
+
+	header nav ul li a {
+		display: block;
+		text-align: center;
+	}
+
+	header nav ul li a:hover:not(.active) {
+		border: none;
+	}
+
+	article#showcase-content {
+		background-color: rgba(0,0,0,0.7);
+		border-radius: 5px;
+	}
+
+	article#showcase-content h1 {
+		margin: 20px 0 10px 0;
+		font-size: 30px;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+
+	article#sub-content #sub-email,
+	article#sub-content #sub-email button.btn-1, article#sub-content input[type=email],
+	article#about-the-page, aside#about-aside, article#contact-form,
+	aside#contact-side-bar {
+		float: none;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.services-col, .works-col {
+		float: none;
+		width: 100%;
+		padding: 10px 0;
+	}
+
+	.link a {
+		font-size: 17px;
+	}
+
+	.works-col:not(:last-child), .services-col:not(:last-child) {
+		margin-bottom: 25px;
+	}
+
+	article#about-the-page {
+		padding: 5px;
+		margin-top: 20px;
+	}
+
+	aside#contact-side-bar, article#contact-form  {
+		padding: 10px;
+		margin: 25px auto;
+	}
+
+	article#contact-form h1 {
+		font-size: 25px;
+		margin-top: 10px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	footer .dev-link img {
+		width: 20%;
+	}
+}
